@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://fonts.cdnfonts.com/css/aespa" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-black text-gametext h-screen flex justify-center items-center">
+    <div class="card-game-container flex flex-col justify-center items-center">
+        <!-- game tittle -->
+        <h1 class="uppercase font-aespa font-bold text-4xl mb-2 mt-4">aespa fliplash</h1>
+        
+        <!-- card -->
+        <div class="grid-card-container"></div>
+
+        <!-- move and time -->
+        <p class="font-aespa text-2xl font-bold mt-4">Moves: <span class="moves"></span></p>
+        <p class="font-aespa text-2xl font-bold">Times: <span class="times">00:00</span></p>
+        
+        <!-- start and restart button -->
+        <div class="w-[168px] h-[52px] md:w-[168px] md:h-[64px] lg:w-[168px] lg:h-[76px] rounded-xl bg-[#151919] hover:bg-[#222626] active:bg-[#151919] drop-shadow-lg drop-shadow-[#9000FF]/40 hover:drop-shadow-[#9000FF]/70 mt-1 mb-4 flex justify-center">
+            <button class="start-button font-aespa text-white text-3xl mt-1">Start</button>
+        </div>
+    </div>
+
+    <script type="module" src="./assets/js/ae-flip.js"></script>
+</body>
+</html>

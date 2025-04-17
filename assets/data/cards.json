@@ -1,0 +1,34 @@
+[
+    {
+        "image": "./assets/img/ae-flip/giselle-1.png",
+        "name": "giselle-1"
+    },
+    {
+        "image": "./assets/img/ae-flip/giselle-2.png",
+        "name": "giselle-2"
+    },
+    {
+        "image": "./assets/img/ae-flip/karina-1.png",
+        "name": "karina-1"
+    },
+    {
+        "image": "./assets/img/ae-flip/karina-2.png",
+        "name": "karina-2"
+    },
+    {
+        "image": "./assets/img/ae-flip/ningning-1.png",
+        "name": "ningning-1"
+    },
+    {
+        "image": "./assets/img/ae-flip/ningning-2.png",
+        "name": "ningning-2"
+    },
+    {
+        "image": "./assets/img/ae-flip/winter-1.png",
+        "name": "winter-1"
+    },
+    {
+        "image": "./assets/img/ae-flip/winter-2.png",
+        "name": "winter-2"
+    }
+]
