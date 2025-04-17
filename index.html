@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aespa" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>RevoFun</title>
+</head>
+<body>
+    <!-- navigation -->
+    <nav id="navbar" class="flex justify-between items-center px-6 py-4 w-full text-white fixed transition-all duration-300 z-50">
+        <h1 class="text-2xl font-bold">RevoFun</h1>
+        <div class="flex gap-4">
+            <button id="mobile-navbar" class="hover:text-gray-300 sm:hidden"><i class="fa-solid fa-bars"></i></button>
+            <a href="#home" class="hover:text-gray-300 hover:underline hover:underline-offset-4 hidden sm:block">Home</a>
+            <a href="#playground" class="hover:text-gray-300 hover:underline hover:underline-offset-4 hidden sm:block">PlayGround</a>
+        </div>
+    </nav>
+    
+    <!-- navigation for mobile -->
+    <div id="mobile-navbar-menu" class="text-white fixed flex flex-col text-right gap-2 right-5 top-16 sm:hidden hidden z-50">
+        <a href="#home" class="hover:text-gray-300 hover:underline hover:underline-offset-4 text-shadow-lg">Home</a>
+        <a href="#playground" class="hover:text-gray-300 hover:underline hover:underline-offset-4 text-shadow-lg/10">PlayGround</a>
+    </div>
+    <main>
+
+        <!-- home section -->
+        <section id="home" class="font-righteous text-white h-screen bg-animate flex justify-center items-center overflow-hidden">
+            <div class="grid justify-center items-center grid-cols-1 grid-rows-[repeat(2,_340px)] lg:grid-cols-2 lg:grid-rows-[repeat(1,_500px)]">
+                <div class="text-4xl md:text-5xl lg:text-6xl flex flex-col gap-3">
+                    <h1>Let's Make a <br></h1>
+                    <h1><div class="h-10 md:h-14 lg:h-16 overflow-hidden"><h1 class="animate-textscroll">Fun<br><br>Exciting<br><br>Awesome</h1></div></h1>
+                    <h1>Game Experience</h1>
+                </div>
+
+                <!-- choosing game -->
+                <div class="mb-16 lg:mb-0 flex flex-col justify-center items-center">
+                    <h2 class="mb-5 lg:mb-8 text-4xl md:text-5xl">Choose Game</h2>
+                    <div class="flex justify-center items-center">
+                        <div class="card-left choosegame overflow-hidden z-0 brightness-50"><img src="./assets/img/orange-click-img.png"></div>
+                        <div class="card-center choosegame overflow-hidden scale-110 z-10"><img src="./assets/img/rps-game-img.png"></div>
+                        <div class="card-right choosegame overflow-hidden z-0 brightness-50"><img src="./assets/img/ae-flip-img.png"></div>
+                    </div>
+                    <div class="flex flex-col items-center animate-bounceplay">
+                        <p class="mt-5 lg:mt-8 mb-2 text-2xl md:text-3xl">Let's Play</p>
+                        <img class="w-[80px] md:w-[100px]" src="./assets/img/arrow-down.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- playground section -->
+        <section id="playground" class="h-screen bg-bgrps relative">
+            <iframe id="orange-clicker" src="./orange.html" class="w-full h-screen hidden"></iframe>
+            <iframe id="rps-game" src="./rps.html" class="w-full h-screen"></iframe>
+            <iframe id="ae-flipcard" src="./aeflip.html" class="w-full h-full hidden"></iframe>
+        </section>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/choose-game.js"></script>
+</body>
+</html>

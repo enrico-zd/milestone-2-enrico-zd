@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+    /* custom color */
+    --color-clickcounter: #FC8939;
+    --color-hoverclick: #E47B32;
+    --color-ringclick: #CD6117;
+    --color-bgrps: #065957;
+    --color-darkgreen: #5EAAA8;
+    --color-selecthand: #233245;
+    --color-whiteground: #E2E2E2;
+    --color-gametext: #E0E0E0;
+
+    /* custom font */
+    --font-chewy: "Chewy";
+    --font-righteous : "Righteous";
+    --font-aespa: "aespa", "sans-serif"; 
+
+    /* custom animation */
+    --animate-textscroll: scroll 12s ease-in-out infinite;
+    --animate-bounceplay: bouncePlay 1.5s infinite;
+    --animate-bgcolor: bgColor 8s ease-in-out infinite;
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+        10% {
+            transform: translateY(0);
+        }
+        15% {
+            transform: translateY(-40%);
+        }
+        35% {
+            transform: translateY(-40%);
+        }
+        40% {
+            transform: translateY(-80%);
+        }
+        60% {
+            transform: translateY(-80%);
+        }
+        65% {
+            transform: translateY(-40%);
+        }
+        85% {
+            transform: translateY(-40%);
+        }
+        90% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes bgColor {
+        0% {
+            background-color: #364153;
+        }
+        50% {
+            background-color: #272F3B;
+        }
+        100% {
+            background-color: #364153;
+        }
+    }
+
+    @keyframes bouncePlay{
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(3px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
+
+/* componennts */
+@layer components{
+    .bg-animate {
+        @apply animate-bgcolor;
+    }
+    .choosegame{
+        @apply w-[100px] h-[120px] md:w-[125px] md:h-[150px] lg:w-[200px] lg:h-[240px] rounded-2xl bg-gray-300 shadow-2xl cursor-pointer transition-all duration-500 ease-in-out;
+    }
+    .card{
+        @apply transform-3d transition-all duration-500 ease-in-out w-[80px] h-[100px] md:w-[110px] md:h-[140px] lg:w-[130px] lg:h-[160px] flex relative;
+    }
+    .front, .back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    } 
+    .flipped{
+        @apply rotate-y-[180deg];
+    }
+    .grid-card-container{
+        @apply grid justify-center gap-2 lg:gap-3 grid-cols-[repeat(4,_80px)] grid-rows-[repeat(4,_100px)] md:grid-cols-[repeat(4,_110px)] md:grid-rows-[repeat(4,_140px)] lg:grid-cols-[repeat(4,_130px)] lg:grid-rows-[repeat(4,_160px)]
+    }
+}
