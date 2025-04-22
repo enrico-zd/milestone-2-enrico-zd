@@ -23,6 +23,15 @@ function rps(handSign){
     const playerHand = document.querySelector('img[alt="player-hand"]');
     let playerChoice;
 
+    // Add scale up animation
+    playerHand.style.transform = 'scale(1.2)';
+    playerHand.style.transition = 'transform 0.2s ease';
+
+    // Reset scale after animation
+    setTimeout(() => {
+        playerHand.style.transform = 'scale(1)';
+    }, 200);
+
     switch(handSign){
         case 0:
             playerHand.src = "./assets/img/rps-game/rock-hand-p.png";
@@ -53,6 +62,15 @@ function rpsC(){
     const computerChoice = Math.floor(Math.random() * 3);
     const computerHand = document.querySelector('img[alt="computer-hand"]');
     let choice;
+
+    // Add scale up animation
+    computerHand.style.transform ='scale(1.2)';
+    computerHand.style.transition = 'transform 0.2s ease';
+
+    // Reset scale after animation
+    setTimeout(() => {
+        computerHand.style.transform ='scale(1)';
+    }, 200);
 
     switch(computerChoice){
         case 0:
