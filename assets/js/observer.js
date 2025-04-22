@@ -9,13 +9,3 @@ export const observer1 = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.1 });
-
- export const observer2 = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            navbar.classList.add('opacity-0', '-translate-y-full');
-        } else {
-            navbar.classList.remove('opacity-0', '-translate-y-full');
-        }
-    });
-});

@@ -1,7 +1,6 @@
-import { observer1, observer2 } from "./observer.js";
+import { observer1 } from "./observer.js";
 
 const playGround = document.getElementById('playground');
-const footer = document.getElementById('footer');
 
 const mobileNavbar = document.getElementById('mobile-navbar');
 const mobileNavbarMenu = document.getElementById('mobile-navbar-menu');
@@ -24,4 +23,3 @@ mobileNavbar.addEventListener('click', () => {
 });
 
 observer1.observe(playGround);
-observer2.observe(footer);
