@@ -36,7 +36,11 @@ RevoFun is an interactive web-based game collection platform that offers multipl
    cd milestone-2-enrico-zd
    ```
 
-3. Run Tailwind:
+3. Install Tailwind:
+   ```bash
+   npm install tailwindcss @tailwindcss/cli
+   ```
+4. Run Tailwind:
    ```bash
    npm run build
    ```

@@ -50,9 +50,6 @@ function rps(handSign){
     // Get computer choice and check winner
     const computerChoice = rpsC();
 
-    console.log("Player choice: " + playerChoice);
-    console.log("Computer choice: " + computerChoice);
-
     checkWinner(playerChoice, computerChoice);
 }
 
